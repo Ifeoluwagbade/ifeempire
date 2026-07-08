@@ -62,8 +62,31 @@ export default function Home() {
 
         </div>
 
-      </section>
+          </section>
+
+    {/* About Section */}
+
+    <section className="bg-zinc-900 py-24 px-8">
+
+      <div className="max-w-6xl mx-auto">
+
+        <h2 className="text-5xl font-bold text-center mb-12">
+          About IFEEMPIRE
+        </h2>
+
+        <p className="text-gray-300 text-xl leading-10 text-center max-w-4xl mx-auto">
+          IFEEMPIRE is a technology-driven company committed to building secure,
+          innovative and scalable digital solutions for businesses across Africa
+          and beyond. We specialize in cybersecurity, software development,
+          artificial intelligence, cloud technologies and IT consulting,
+          empowering organizations to grow confidently in a rapidly evolving
+          digital world.
+        </p>
+
+      </div>
+
+    </section>
 
     </main>
-  );
+      );
 }
