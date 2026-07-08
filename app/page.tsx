@@ -86,6 +86,75 @@ export default function Home() {
       </div>
 
     </section>
+    {/* Services Section */}
+
+<section className="py-24 bg-black px-8">
+
+  <div className="max-w-7xl mx-auto">
+
+    <h2 className="text-5xl font-bold text-center mb-16">
+      Our Services
+    </h2>
+
+    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+      <div className="bg-zinc-900 rounded-2xl p-8 hover:scale-105 transition duration-300">
+        <div className="text-5xl mb-6">🔒</div>
+
+        <h3 className="text-2xl font-bold mb-4">
+          Cybersecurity
+        </h3>
+
+        <p className="text-gray-400 leading-8">
+          Protecting businesses with advanced security assessments,
+          penetration testing and cyber defense solutions.
+        </p>
+      </div>
+
+      <div className="bg-zinc-900 rounded-2xl p-8 hover:scale-105 transition duration-300">
+        <div className="text-5xl mb-6">💻</div>
+
+        <h3 className="text-2xl font-bold mb-4">
+          Software Development
+        </h3>
+
+        <p className="text-gray-400 leading-8">
+          Building scalable websites, mobile apps and enterprise
+          software tailored to business needs.
+        </p>
+      </div>
+
+      <div className="bg-zinc-900 rounded-2xl p-8 hover:scale-105 transition duration-300">
+        <div className="text-5xl mb-6">☁</div>
+
+        <h3 className="text-2xl font-bold mb-4">
+          Cloud Solutions
+        </h3>
+
+        <p className="text-gray-400 leading-8">
+          Helping organizations migrate securely to the cloud with
+          modern infrastructure and monitoring.
+        </p>
+      </div>
+
+      <div className="bg-zinc-900 rounded-2xl p-8 hover:scale-105 transition duration-300">
+        <div className="text-5xl mb-6">🤖</div>
+
+        <h3 className="text-2xl font-bold mb-4">
+          Artificial Intelligence
+        </h3>
+
+        <p className="text-gray-400 leading-8">
+          AI-powered automation and intelligent systems that improve
+          productivity and decision making.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
     </main>
       );
