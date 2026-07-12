@@ -1,5 +1,7 @@
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
+import Services from "../components/Services";
+import WhyChooseUs from "../components/WhyChooseUs";
 import {
   FaShieldAlt,
   FaLaptopCode,
@@ -85,183 +87,11 @@ export default function Home() {
     </section>
        
     {/* Services Section */}
+<Services />
 
-<section
-  id="services"
-  className="bg-black py-24 px-8"
->
-
-  <div className="max-w-7xl mx-auto">
-
-    <h2 className="text-5xl font-bold text-center mb-16">
-      Our Services
-    </h2>
-
-    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
-
-      <div className="bg-zinc-900 rounded-2xl p-8 hover:border hover:border-yellow-500 transition">
-
-       <div className="text-5xl text-yellow-400 mb-6">
-  <FaShieldAlt />
-</div>
-
-<h3 className="text-2xl font-bold mb-4">
-  Cybersecurity
-</h3>
-
-        <p className="text-gray-400 leading-8">
-          Protecting organizations through security assessments,
-          vulnerability management, penetration testing and
-          cybersecurity consulting.
-        </p>
-
-      </div>
-
-      <div className="bg-zinc-900 rounded-2xl p-8 hover:border hover:border-yellow-500 transition">
-
-        <h3 className="text-2xl font-bold mb-4 text-yellow-400">
-          Software Development
-        </h3>
-
-        <p className="text-gray-400 leading-8">
-          Building secure web applications,
-          enterprise software,
-          business automation systems
-          and scalable digital platforms.
-        </p>
-
-      </div>
-
-      <div className="bg-zinc-900 rounded-2xl p-8 hover:border hover:border-yellow-500 transition">
-
-        <h3 className="text-2xl font-bold mb-4 text-yellow-400">
-          Artificial Intelligence
-        </h3>
-
-        <p className="text-gray-400 leading-8">
-          Developing AI-powered business solutions,
-          automation,
-          intelligent assistants
-          and data-driven decision systems.
-        </p>
-
-      </div>
-
-      <div className="bg-zinc-900 rounded-2xl p-8 hover:border hover:border-yellow-500 transition">
-
-        <h3 className="text-2xl font-bold mb-4 text-yellow-400">
-          Cloud Computing
-        </h3>
-
-        <p className="text-gray-400 leading-8">
-          Cloud migration,
-          infrastructure management,
-          Microsoft Azure,
-          AWS and hybrid cloud solutions.
-        </p>
-
-      </div>
-
-      <div className="bg-zinc-900 rounded-2xl p-8 hover:border hover:border-yellow-500 transition">
-
-        <h3 className="text-2xl font-bold mb-4 text-yellow-400">
-          IT Consulting
-        </h3>
-
-        <p className="text-gray-400 leading-8">
-          Helping businesses adopt modern technology,
-          improve efficiency
-          and reduce operational risks.
-        </p>
-
-      </div>
-
-      <div className="bg-zinc-900 rounded-2xl p-8 hover:border hover:border-yellow-500 transition">
-
-        <h3 className="text-2xl font-bold mb-4 text-yellow-400">
-          Digital Transformation
-        </h3>
-
-        <p className="text-gray-400 leading-8">
-          End-to-end technology strategy,
-          digital innovation,
-          automation
-          and business transformation services.
-        </p>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
 {/* Why Choose Us */}
+<WhyChooseUs />
 
-<section className="bg-zinc-900 py-24 px-8">
-
-  <div className="max-w-7xl mx-auto">
-
-    <h2 className="text-5xl font-bold text-center mb-6">
-      Why Choose IFEEMPIRE?
-    </h2>
-
-    <p className="text-gray-400 text-center text-xl max-w-3xl mx-auto mb-16">
-      We combine innovation, security and excellence to deliver
-      technology solutions that businesses can trust.
-    </p>
-
-    <div className="grid md:grid-cols-2 gap-10">
-
-      <div className="bg-black rounded-2xl p-8 border border-zinc-700">
-        <h3 className="text-2xl font-bold mb-4">
-          🛡 Security First
-        </h3>
-
-        <p className="text-gray-400 leading-8">
-          Security is built into every solution from day one.
-          We don't add security later—we engineer it into the foundation.
-        </p>
-      </div>
-
-      <div className="bg-black rounded-2xl p-8 border border-zinc-700">
-        <h3 className="text-2xl font-bold mb-4">
-          ⚡ Modern Technology
-        </h3>
-
-        <p className="text-gray-400 leading-8">
-          We build with modern technologies that are fast,
-          scalable and ready for future business growth.
-        </p>
-      </div>
-
-      <div className="bg-black rounded-2xl p-8 border border-zinc-700">
-        <h3 className="text-2xl font-bold mb-4">
-          🤝 Trusted Partnership
-        </h3>
-
-        <p className="text-gray-400 leading-8">
-          We work alongside our clients, providing continuous
-          support and long-term technology guidance.
-        </p>
-      </div>
-
-      <div className="bg-black rounded-2xl p-8 border border-zinc-700">
-        <h3 className="text-2xl font-bold mb-4">
-          🌍 Global Vision
-        </h3>
-
-        <p className="text-gray-400 leading-8">
-          Although proudly African, our solutions are designed
-          to compete on a global stage.
-        </p>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
 {/* Statistics Section */}
 
 <section className="bg-black py-24 px-8">
