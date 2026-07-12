@@ -1,71 +1,65 @@
+import Navbar from "../components/Navbar";
+import Hero from "../components/Hero";
+import {
+  FaShieldAlt,
+  FaLaptopCode,
+  FaRobot,
+  FaCloud,
+  FaTools,
+  FaChartLine,
+} from "react-icons/fa";
 export default function Home() {
   return (
     <main className="min-h-screen bg-black text-white">
 
       {/* Navbar */}
-
-      <nav className="fixed top-0 left-0 w-full flex justify-between items-center px-10 py-6 bg-black/80 backdrop-blur-md">
-
-        <h1 className="text-2xl font-bold">
-          IFEEMPIRE
-        </h1>
-
-        <div className="flex gap-8">
-
-          <a href="#home" className="hover:text-yellow-400 transition">
-  Home
-</a>
-
-        <a href="#services" className="hover:text-yellow-400 transition">
-  Services
-</a>
-
-        <a href="#about" className="hover:text-yellow-400 transition">
-  About
-</a>
-
-         <a href="#contact" className="hover:text-yellow-400 transition">
-  Contact
-</a>
-
-        </div>
-
-      </nav>
+<Navbar />
 
       {/* Hero Section */}
 
-      <section
-  id="home"
-  className="flex flex-col items-center justify-center text-center min-h-screen px-6"
->
+     <Hero />
 
-        <h1 className="text-7xl md:text-8xl font-extrabold">
-          IFEEMPIRE
-        </h1>
+        {/* Trusted By Section */}
 
-        <p className="text-3xl mt-8 max-w-5xl">
-          Building Businesses. Creating Opportunities. Empowering Africa.
-        </p>
+      <section className="py-16 border-y border-zinc-800">
 
-        <p className="text-xl text-gray-400 mt-8 max-w-4xl leading-9">
-          We build secure digital solutions, intelligent software,
-          AI-powered systems and cybersecurity services that help
-          businesses grow with confidence.
-        </p>
+        <div className="text-center">
 
-        <div className="flex gap-6 mt-12">
+          <p className="text-gray-400 uppercase tracking-[6px] text-sm mb-10">
+            Trusted Technologies
+          </p>
 
-          <button className="bg-yellow-500 hover:bg-yellow-400 text-black font-bold px-10 py-5 rounded-xl text-xl transition">
-            Get Started
-          </button>
+          <div className="flex flex-wrap justify-center items-center gap-12 text-2xl font-bold text-gray-500">
 
-          <button className="border border-white hover:bg-white hover:text-black px-10 py-5 rounded-xl text-xl font-bold transition">
-            Learn More
-          </button>
+            <span className="hover:text-yellow-400 transition duration-300">
+              Microsoft
+            </span>
+
+            <span className="hover:text-yellow-400 transition duration-300">
+              AWS
+            </span>
+
+            <span className="hover:text-yellow-400 transition duration-300">
+              Cisco
+            </span>
+
+            <span className="hover:text-yellow-400 transition duration-300">
+              Google Cloud
+            </span>
+
+            <span className="hover:text-yellow-400 transition duration-300">
+              GitHub
+            </span>
+
+            <span className="hover:text-yellow-400 transition duration-300">
+              Docker
+            </span>
+
+          </div>
 
         </div>
 
-          </section>
+      </section>
 
     {/* About Section */}
 
@@ -89,9 +83,13 @@ export default function Home() {
       </div>
 
     </section>
+       
     {/* Services Section */}
 
-<section className="py-24 bg-black px-8">
+<section
+  id="services"
+  className="bg-black py-24 px-8"
+>
 
   <div className="max-w-7xl mx-auto">
 
@@ -99,58 +97,98 @@ export default function Home() {
       Our Services
     </h2>
 
-    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
 
-      <div className="bg-zinc-900 rounded-2xl p-8 hover:scale-105 transition duration-300">
-        <div className="text-5xl mb-6">🔒</div>
+      <div className="bg-zinc-900 rounded-2xl p-8 hover:border hover:border-yellow-500 transition">
 
-        <h3 className="text-2xl font-bold mb-4">
-          Cybersecurity
-        </h3>
+       <div className="text-5xl text-yellow-400 mb-6">
+  <FaShieldAlt />
+</div>
+
+<h3 className="text-2xl font-bold mb-4">
+  Cybersecurity
+</h3>
 
         <p className="text-gray-400 leading-8">
-          Protecting businesses with advanced security assessments,
-          penetration testing and cyber defense solutions.
+          Protecting organizations through security assessments,
+          vulnerability management, penetration testing and
+          cybersecurity consulting.
         </p>
+
       </div>
 
-      <div className="bg-zinc-900 rounded-2xl p-8 hover:scale-105 transition duration-300">
-        <div className="text-5xl mb-6">💻</div>
+      <div className="bg-zinc-900 rounded-2xl p-8 hover:border hover:border-yellow-500 transition">
 
-        <h3 className="text-2xl font-bold mb-4">
+        <h3 className="text-2xl font-bold mb-4 text-yellow-400">
           Software Development
         </h3>
 
         <p className="text-gray-400 leading-8">
-          Building scalable websites, mobile apps and enterprise
-          software tailored to business needs.
+          Building secure web applications,
+          enterprise software,
+          business automation systems
+          and scalable digital platforms.
         </p>
+
       </div>
 
-      <div className="bg-zinc-900 rounded-2xl p-8 hover:scale-105 transition duration-300">
-        <div className="text-5xl mb-6">☁</div>
+      <div className="bg-zinc-900 rounded-2xl p-8 hover:border hover:border-yellow-500 transition">
 
-        <h3 className="text-2xl font-bold mb-4">
-          Cloud Solutions
-        </h3>
-
-        <p className="text-gray-400 leading-8">
-          Helping organizations migrate securely to the cloud with
-          modern infrastructure and monitoring.
-        </p>
-      </div>
-
-      <div className="bg-zinc-900 rounded-2xl p-8 hover:scale-105 transition duration-300">
-        <div className="text-5xl mb-6">🤖</div>
-
-        <h3 className="text-2xl font-bold mb-4">
+        <h3 className="text-2xl font-bold mb-4 text-yellow-400">
           Artificial Intelligence
         </h3>
 
         <p className="text-gray-400 leading-8">
-          AI-powered automation and intelligent systems that improve
-          productivity and decision making.
+          Developing AI-powered business solutions,
+          automation,
+          intelligent assistants
+          and data-driven decision systems.
         </p>
+
+      </div>
+
+      <div className="bg-zinc-900 rounded-2xl p-8 hover:border hover:border-yellow-500 transition">
+
+        <h3 className="text-2xl font-bold mb-4 text-yellow-400">
+          Cloud Computing
+        </h3>
+
+        <p className="text-gray-400 leading-8">
+          Cloud migration,
+          infrastructure management,
+          Microsoft Azure,
+          AWS and hybrid cloud solutions.
+        </p>
+
+      </div>
+
+      <div className="bg-zinc-900 rounded-2xl p-8 hover:border hover:border-yellow-500 transition">
+
+        <h3 className="text-2xl font-bold mb-4 text-yellow-400">
+          IT Consulting
+        </h3>
+
+        <p className="text-gray-400 leading-8">
+          Helping businesses adopt modern technology,
+          improve efficiency
+          and reduce operational risks.
+        </p>
+
+      </div>
+
+      <div className="bg-zinc-900 rounded-2xl p-8 hover:border hover:border-yellow-500 transition">
+
+        <h3 className="text-2xl font-bold mb-4 text-yellow-400">
+          Digital Transformation
+        </h3>
+
+        <p className="text-gray-400 leading-8">
+          End-to-end technology strategy,
+          digital innovation,
+          automation
+          and business transformation services.
+        </p>
+
       </div>
 
     </div>
